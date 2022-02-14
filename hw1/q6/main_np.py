@@ -1,36 +1,29 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import numpy as np
 
 
-# In[25]:
+# In[9]:
 
 
-# Creating my array
+# 6.1 A 2d array with rows of magnitude > 1
 myarray = np.array([[0.111,1.211,2.311,3.411,4.511], [-5.411,-6.311,-7.211,-8.111,-9.011]])
 myarray
 
 
-# In[26]:
-
-
-# 6.1 A 2d array with rows of magnitude > 1
-rows = myarray[0:2, :]
-rows
-
-
-# In[27]:
+# In[10]:
 
 
 # 6.2 A 1d array with all elements of the matrix in a column-major way
-myarray[:, 0]
+myarray2 = myarray.copy()
+myarray2.flatten('F')
 
 
-# In[28]:
+# In[11]:
 
 
 # 6.3 A 2d array with all the negative values replaced by zero
@@ -76,4 +69,3 @@ sqarray[...] = 0
 diag[...] = nonzeros
 
 sqarray
-
