@@ -18,7 +18,7 @@ CREATE TABLE Users (
   last_name VARCHAR(45),
   PRIMARY KEY (username)
   );
-# Creating Movies table
+# Creating Ratings table
 CREATE TABLE Ratings (
   username VARCHAR(45),
   first_name VARCHAR(45),
