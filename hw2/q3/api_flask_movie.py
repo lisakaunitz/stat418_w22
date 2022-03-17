@@ -22,13 +22,7 @@ from Levenshtein import distance # https://www.statology.org/levenshtein-distanc
 
 
 app = Flask(__name__)
-
-# Running without any additional route will launch the HTML form
 @app.route('/')
-#def form():
-#    return render_template('form.html')
-
-
 def func(row):
     xml = ['<item>']
     for field in row.index:
